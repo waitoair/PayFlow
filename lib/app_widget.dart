@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:payflow/modules/barcode_scanner/barcode_scanner.dart';
 import 'package:payflow/modules/splash/splash_page.dart';
 import 'modules/home/home_page.dart';
 import 'modules/login/login_page.dart';
@@ -17,9 +18,10 @@ class AppWidget extends StatelessWidget {
       ),
       initialRoute: "/splash",
       routes: {
-        "/home": (context) => HomePage(),
         "/splash": (context) => SplashPage(),
         "/login": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+        "/barcode_scanner": (context) => BarcodeScannerPage(),
       }
     );
   }
